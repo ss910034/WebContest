@@ -1,0 +1,298 @@
+body{
+  font-family:微軟正黑體;  
+  font-family: "Helvetica Neue", Helvetica,arial, sans-serif;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.top{
+	height: 100px;
+	width:90%;
+	border: solid 2px;
+	margin: auto 0px;
+	position: relative;
+	left: 5%;
+}
+.image{
+	display: inline-block;
+	position: absolute;
+	right : 0px;
+	background-image: url('img/a.jpg');
+
+}
+.text{
+	position: absolute;
+	top: 28px;
+	left: 8px;
+}
+.user{
+	position: relative;
+	left:50%;
+	right: 50%;
+	border: dotted 2px;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 10px;
+	margin-left: -128px;
+}
+.user input{
+	margin-top: 5px;
+}
+.user select	{
+	margin-top: 5px;
+}
+.user .sub{
+	background-color: #039be5;
+	border: none;
+    border-radius: 2px;
+    padding: 0.75em;
+	margin-top: 5px;
+	width: 100%;
+	color: white;
+}
+@media (min-width: 45em) {
+  body {
+    font-size: 120%;
+  }
+}
+@media (min-width: 65em) {
+  body {
+    font-size: 130%;
+  }
+}
+@media (min-width: 85em) {
+  body {
+    font-size: 150%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: block;
+  top: 0;
+  padding: 0;
+  z-index: 8;
+  height: 3.5em;
+}
+header h1#logo {
+  color: #fff;
+  margin: 0 !important;
+  padding: .4em 1em 0;
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  padding: 1em 0.5em 0;
+  top: -9px;
+}
+header * {
+  background-repeat: no-repeat;
+  position: relative;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header nav p {
+  font-size: 80%;
+  color: #12384E;
+  margin: 0 0 -1em;
+  padding: 0;
+  font-weight: 400;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  font-size: inherit;
+  visibility: hidden;
+  top: -5%;
+  width: 100%;
+  padding: 0;
+  opacity: 0;
+  display: table-cell;
+  vertical-align: middle;
+  -webkit-transform: perspective(600px) rotateX(10deg);
+  transform: perspective(600px) rotateX(10deg);
+  -webkit-transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
+  -moz-transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
+  -o-transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
+}
+header nav ul li {
+  list-style: none;
+  text-align: center;
+}
+header nav ul li a {
+  display: block;
+  padding: .5em 0;
+  color: #fff;
+  width: 100%;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+header nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+header nav ul li a:focus {
+  outline: 0;
+}
+header nav ul li a:hover, header nav ul li a:active {
+  color: #0e1718 !important;
+}
+
+header .nav-background {
+  position: fixed;
+  top :0px;
+  z-index: 99;
+  visibility:hidden;
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: table;
+  -webkit-transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+  -moz-transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+  -o-transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+  transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+}
+.rrr{
+	visibility:visible;
+  background: rgba(27, 128, 167, 0.9)
+}
+header #toggle {
+  height: 3em;
+  z-index: 999;
+  padding: 1.5em 1em 0;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  right: .5em;
+  -webkit-transition: padding-top 0.6s cubic-bezier(0.1, 0.01, 0.3, 1);
+  transition: padding-top 0.6s cubic-bezier(0.1, 0.01, 0.3, 1);
+}
+header #toggle:hover {
+  transition: top, 0.5s, ease-in-out;
+}
+header #toggle:hover .menubars:before {
+  top: -9px;
+}
+header #toggle:hover .menubars:after {
+  top: 9px;
+}
+
+.menubars {
+  width: 24px;
+  height: 4px;
+  margin: 10px 0;
+  background: #fff;
+  position: relative;
+  z-index: 999 !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.menubars:before {
+  top: -8px;
+}
+.menubars:after {
+  top: 8px;
+}
+.menubars:after, .menubars:before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 4px;
+  background: #EC008C;
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menubars {
+  width: 24px;
+  height: 4px;
+  margin: .2em 0;
+  background: #FFF;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.menubars:before {
+  top: -8px;
+}
+.menubars:after {
+  top: 8px;
+}
+.menubars:after, .menubars:before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 4px;
+  background: #FFF;
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.js-open {
+  height: 100%;
+}
+.js-open header {
+  margin-top: 0px;
+  background: none;
+}
+.js-open .menubars {
+  background: none !important;
+}
+.js-open .menubars:after {
+  top: 0 !important;
+  background: #fff !important;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.js-open .menubars:before {
+  top: 0 !important;
+  background: #fff !important;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.js-open .nav-background {
+  background: rgba(27, 128, 167, 0.9) !important;
+}
+.js-open ul {
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
+  -webkit-transform: perspective(600px) rotateX(0deg);
+  -moz-transform: perspective(600px) rotateX(0deg);
+  -ms-transform: perspective(600px) rotateX(0deg);
+  -o-transform: perspective(600px) rotateX(0deg);
+  transform: perspective(600px) rotateX(0deg);
+}
+.write{
+    position: fixed;  
+    bottom: 0px;  /*設置垂直位置*/
+    right: 0px;  /*設置水平位置，依所放的內容多寡需要自行手動調整*/
+    padding: 10px 20px;
+}
+
+.write #title{
+    padding-right: 5px;  /*讓標題與連結中間有空隙*/
+}

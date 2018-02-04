@@ -1,0 +1,357 @@
+﻿*{
+  font-family : 微軟正黑體;
+}
+.home{
+  position : abosolute;
+  border : solid 0.1px white;
+  width : 100%;
+  height : 600px;
+  background-image : url("home.jpg");
+  background-repeat : no-repeat;
+  background-size : 100% ; 
+  animation : change 6s;
+}
+@keyframes change{
+  0% {
+    -webkit-animation-timing-function: ease;
+     background : black;
+  }
+  40% {
+    -webkit-animation-timing-function: ease-in;
+    background-size : 100%;
+    background-image : url("home.jpg");
+    background-repeat : no-repeat;
+  }
+}
+.login{
+  position : static;
+  border : solid black 1px;
+  width : 300px;
+  height : 10px; 
+  margin-left : ;
+}
+.headname{
+  position : static;
+  border : solid 0px;
+  height : 400px;
+  width : 500px;
+  margin : auto;
+  margin-top : 200px;
+}
+.intro{
+  //border : solid 1px;
+  font-size : 20px;
+  margin-left: 6%;
+  margin-top : 6%;
+  width : 450px;
+}
+.name p{
+  font-size : 60px;
+  margin-left: 2%;
+}
+.name{
+  //border : solid 0.5px;
+  position : static;
+  width : 500px;
+  height : 60px;
+margin:auto 0px;
+    color : white;
+  font-weight: lighter;
+  animation: namemove 4s;
+}
+@keyframes namemove{
+  from {
+    color : black;
+  }
+  to {
+    color : white;
+  }
+}
+.animate1{
+  position : static;
+  border : solid  1px;
+  color : white;
+  width : 500px;
+  margin-top : -100px;
+  margin-left : 0px;
+  animation: mymove1 1s;
+  -webkit-animation-timing-function: ease;
+}
+@keyframes mymove1{
+  from {width : 500px;
+   margin-top : 100px;
+  }
+  to {width : 500px;
+  margin-top : -100px;
+  }
+}
+  
+.animate2{
+  position : static;
+  border : solid 1px;
+  color : white;
+  width : 500px;
+  margin-top : 300px;
+  margin-left : 0px;
+  animation: mymove2 1s;
+  -webkit-animation-timing-function: ease;
+}
+@keyframes mymove2{
+  from {width : 500px;
+   margin-top : -100px;
+  }
+  to {width : 500px;
+  margin-top : 300px;
+  }
+}
+
+
+.introduction{
+   border : solid 0.1px white;
+  width : 100%;
+  height : 600px;
+  background-image : url("introduction.png");
+  background-size : 100%;
+}
+.block{
+  //border : solid 2px ;
+  //background : white;
+  background-size : 100%;
+  width : 500px;
+  height : 300px;
+  margin : 0px auto;
+  margin-top : 50px;
+  opacity : 0.7;
+}
+
+.select{
+  background :  #444444;
+   border : solid 0.1px;
+  width : 100%;
+  height : 900px;
+}
+.icon1{
+  border-radius: 200px;
+  position : relative;
+  border : transparent;
+  width : 200px;
+  height : 200px;
+  margin-top : -200px;
+  margin-left : 10%;
+  z-index: 1;
+  perspective: 1000px;
+}
+.flip1,.flip2,.flip3{
+  position : relative;
+} 
+.back1,.back2,.back3{
+  position : absolute;
+  transform: rotateY(180deg);
+}
+.icon2{
+  border-radius: 200px;
+  postition :  relative;
+  border : transparent;
+  width : 200px;
+  height : 200px;
+  margin : auto;
+  margin-top : 80px;
+  z-index: 1;
+  perspective: 1000px;
+}
+.icon3{
+  border-radius: 200px;
+  position : absolute;
+  border : transparent;
+  width : 200px;
+  height : 200px;
+  margin-left : 75%;
+  margin-top : -200px;
+  z-index: 1;
+  perspective: 1000px;
+}
+
+
+.icon1:hover .flip1, .icon1.hover .flip1 {
+    transform: rotateY(180deg);
+  }
+
+.icon1, .front1, .back1 {
+  width: 200px;
+  height: 200px;
+}
+
+.flip1 {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front1, .back1 {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front1 {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+
+.icon2:hover .flip2, .icon2.hover .flip2 {
+    transform: rotateY(180deg);
+  }
+
+.icon2, .front2, .back2 {
+  width: 200px;
+  height: 200px;
+}
+
+.flip2 {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front2, .back2 {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front2 {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+
+.icon3:hover .flip3, .icon3.hover .flip3 {
+    transform: rotateY(180deg);
+  }
+
+.icon3, .front3, .back3 {
+  width: 200px;
+  height: 200px;
+}
+
+.flip3 {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front3, .back3 {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front3 {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+
+.button{
+  color : black;
+  border-radius : 50%;
+  height : 200px;
+  width : 200px;
+  background-image :  url("back.png");
+  background-size : cover;
+  display: inline-block;
+  text-align: center;
+  text-decoration : none;
+  line-height : 150px;
+}
+
+.button h3{
+  color: black;
+  font-family: 微軟正黑體;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 40%;
+}
+
+.word1{
+  position : absolute;
+  color : #d9dee4;
+  margin-top : 30px;
+  left : 12%;
+  font-size : 30px;
+}
+.word2{
+  position : absolute;
+  color : #d9dee4;
+  margin-left : 46%;
+  margin-top : 30px;
+  font-size : 30px;
+}
+.word3{
+  position : absolute;
+  color : #d9dee4;
+  margin-top : 30px;
+  margin-left : 77%;
+  font-size : 30px;
+}
+
+
+.line1{
+  /*border : solid  2px white;*/
+  width : 100%;
+  height : 300px;
+}
+.line2 {
+  /*border : solid  2px white;*/
+  width : 100%;
+  height : 300px;
+}
+
+.icon4{
+  margin-top : 80px;
+  border-radius: 200px;
+  margin-left : 28%;
+}
+.icon5{
+  border-radius: 200px;
+  margin-left : 60%;
+  margin-top : -250px;
+}
+.icon4 p{
+  margin-left : 70px;
+  font-size : 30px;
+  color : #d9dee4;
+}
+.icon5 p{
+  margin-left : 70px;
+  font-size : 30px;
+  color : #d9dee4;
+}
+.info{
+  margin-left: 30%;
+  margin-top : 40px;
+  height : 100px;
+  width : 50%;
+}
+.logo{
+  height : 100px;
+  margin-left : 5%;
+  width : 30%;
+}
+.logo image{
+  margin-left : auto;
+}
+.someword{
+  color : white;
+  margin-top : -100px;
+  margin-left : 30%;
+  height : 100px;
+  width : 70%;
+  font-size : 10px
+}

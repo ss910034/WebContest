@@ -1,0 +1,70 @@
+*{
+	font-family:"微軟正黑體";
+}
+#Select{
+	margin : 0px auto;
+	text-align: center;
+	letter-spacing: 1.5px;
+	line-height: 40px;
+	border-spacing:20px 0px;
+    border-collapse:separate;
+}
+#Select .c1{
+	background-color: rgba(143,235,120,0.3);
+}
+#Select .c2{
+	background-color: rgba(143,235,120,0.6);
+}
+#Select .c3{
+	background-color: rgba(143,235,120,0.8);
+}
+#Select .c4{
+	background-color: rgba(203,247,114,0.7);
+}
+#Select .c5{
+	background-color: rgba(203,247,114,1);
+}		
+#Select th{
+	font-size: 20px;
+	width: 20%;
+	border-bottom: solid 2px white; 
+}
+#Select td{
+	font-size: 17px;
+	transition-duration: 0.5s; 
+}
+#Select td:hover{
+	background-color: white;
+	cursor: pointer;	
+}
+
+.tde{
+	background-color: rgba(255,176,87,0.8);
+}
+
+.classform{	
+	position: relative;
+	top :70px;
+  margin : 0px auto;
+  font-size: 15px;
+  border-spacing:0px 0px;
+  border-collapse:separate;
+}
+.classform th{
+  font-size: 20px;
+  text-align:center;
+  width : 100px;
+  height: 50px;
+  color: white;
+}
+#topic{
+	background-color: #60CF9C;
+/*	background: -webkit-linear-gradient(left, #60CF9C 0%, #379B9D 100%); 
+  	background: linear-gradient(to right, #60CF9C 0%, #379B9D 100%);
+*/}
+.classform td{
+  text-align:center;
+  width : 100px;
+  height : 40px;
+  border : solid 1px rgb(111,191,162);
+}
