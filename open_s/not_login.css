@@ -1,0 +1,27 @@
+body{
+  background-color: rgba(194, 194, 163,.50);
+}
+.fix{
+  left: 26%;
+  top: 235px;
+  width: 660px;
+  height: 250px;
+  position : absolute;
+  padding-right: 15px;
+  +border-radius(10px);
+}
+
+.p{
+  position: relative;
+  width: 150px;
+  top: 50px;
+  left: 40px;
+}
+
+.fix p{
+  display: inline;
+  font-family: Chiller;
+  font-size: 70px;
+  font-weight: bold;
+  color: black;
+}

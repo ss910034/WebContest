@@ -1,0 +1,86 @@
+.nav{
+  top: 120px;
+  left: 40px;
+  position: fixed;
+  background-color: rgba(0, 128, 0, 0.3);
+}
+.nav ul{
+  vertical-align: middle;
+  list-style: none;
+  overflow: hidden;
+}
+
+.nav a{
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding-left: 10px;
+  top: 0px;
+  height: 40px;
+  width: 130px;
+  line-height: 40px;
+  position: relative;
+}
+
+.nav-cover a{
+  font-family: 微軟正黑體;
+  font-size: 19px;
+  overflow: hidden;
+}
+  
+.nav-cover a:before{
+  font-family: 微軟正黑體;
+  font-size: 19px;
+  content: attr(data-value);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,.80);
+  color: #fff;
+  transform: translateY(-101%);
+  transition: transform 0.5s;
+}
+
+.nav-cover a:hover:before{
+  transform: translateZ(0);
+}
+
+.back{
+  position: absolute;
+  left: 10%;
+  top: 7%;
+  width: 1200px;
+  height: 580px;
+}
+
+.fix{
+  left: 270px;
+  top: 475px;
+  width: 1000px;
+  height: 100px;
+  background-color: rgba(194, 194, 163,.70);
+  position : fixed;
+  padding-right: 15px;
+  +border-radius(10px);
+}
+
+.fix p{
+  display: inline;
+  font-family: 微軟正黑體;
+  font-size: 60px;
+  font-weight: bold;
+  left: 0px;
+  line-height: 100px;
+}
+
+.fix .k{
+  display: inline;
+  font-family: 微軟正黑體;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+  color: darkblue;
+}
